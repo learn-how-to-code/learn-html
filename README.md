@@ -7,3 +7,5 @@ HTML stands for Hypertext MarkUp Language. HTML is used by the web browser to di
 - CSS ( Stylesheets) :This is used to style the way the content look into browser
 - JavaScript : This is used to make the web page interactive such as clicking on button takes you to another page or moving the mouse over an image makes the image pop up
 - In this tutorial we will focus on only using HTML5 and CSS to build a simple web page.
+
+[!Application View whenn setup ](../blob/master/app-view.PNG)

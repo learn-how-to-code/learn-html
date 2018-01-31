@@ -8,4 +8,13 @@ HTML stands for Hypertext MarkUp Language. HTML is used by the web browser to di
 - JavaScript : This is used to make the web page interactive such as clicking on button takes you to another page or moving the mouse over an image makes the image pop up
 - In this tutorial we will focus on only using HTML5 and CSS to build a simple web page.
 
-[!Application View whenn setup ](app-view.PNG)
+## How to to use this code 
+- Create a web app on local IIS web server or [Azure app service](https://docs.microsoft.com/en-us/azure/app-service).
+- Download the code from this repository and deploy it within you web app 
+- Browse the app 
+
+![Application View whenn setup ](app-view.PNG)
+
+- Under **Build your code**  follow each step from  Step 1 to Step 4 for first time users to use sample code. Clicking on these button generates the code for you. If you are faimilar with HTML , write your code in the Text area under **Build your code** section 
+- Click on **Run code** button to view the result of the custom code or sample code 
+

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Learn HTML5</title>
+	 
+	  <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/2-col-portfolio.css" rel="stylesheet">
+    <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+
+ <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Ignite</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                   
+                    <li>
+                        <a href="index.html">Learn HTML5</a>
+                    </li>
+                     <li>
+                        <a href="learn.html">Learning Resources</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Have a question</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+ <!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Header -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Learn HTML5 : Basics 
+                    <small>Step by Step guide to learn how to build a HTML5 web app</small>
+                </h1>
+                <p>
+                   <h3> What is HTML?</h3>
+                   
+<p>HTML stands for Hypertext MarkUp Language. HTML is used by  the web browser to display content to web page you are accessing on the internet. Tooday's websites are mostly made up of  3 parts : </p>
+<ul>
+<li><b>HTML</b> : This is used the display the content in the browser </li>
+<li><b>CSS ( Stylesheets)</b> :This is used to style the way the content look into browser </li>
+<li><b>JavaScript </b>: This is used to make the web page interactive such as clicking on button takes you to another page or moving the mouse over an image makes the image pop up </li>
+</ul>
+
+<p> In this tutorial we will focus on only using HTML5 and CSS to build a simple web page.</p>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-md-6 portfolio-item">
+                <h3>
+                    <a href="#">Build your code</a>
+                </h3>
+              <p>Follow the steps to build your app. Click here to view the final demo app <a href="demo.html"> View the final demo page </a> . You can download the demo application <a href="demo-download.zip">here</a>.</p>
+<form id="srcForm" action="#">
+    <p>
+        <input name="button1" type="button" value="STEP 1: Add HTML structure" onclick="addHtmlHandler()"/>
+        <input name="button2" type="button" value="STEP 2: Add Content" onclick="addContentHandler()"/><br/>
+        <input name="button3" type="button" value="STEP 3: Add Images for each section" onclick="addImagesHandler()"/>
+        <input name="button4" type="button" value="STEP 4: Add Style" onclick="addStyleHandler()"/> <br/>
+    </p>
+  </form>
+    <textarea id="inputtext" style="border:solid 2px black;font-size:16px;" rows="30" cols="60"> Input Text </textarea> 
+
+         </div>
+            <div class="col-md-6 portfolio-item">
+                <h3>
+                    <a href="#">Run your code</a>
+                    </h3>
+               <form action="#" id="runForm">
+    <input name="runButton" type="button" value="Run Code" onclick="runCodeHandler()"/>  
+</form>
+<div style="padding-top:50px">
+<iframe name="ifrm" id="ifrm" src="runCode.html" width="550" height="710" style="border:3px solid black;"></iframe>
+</div>
+            </div>
+        </div>
+        <!-- /.row-->
+    </div>
+
+ 
+
+<script type="text/javascript">
+
+   var beginhtml = "<html>\r\n<head>";
+   var beginhead = "\r\n<title>HTML5 Lesson</title>\r\n<meta charset=\"utf-8\"/>";
+   var endhead = "\r\n</head>";
+   var endhtml= "\r\n</body>\r\n</\html>";
+   var addcss= "\r\n<link rel=\"stylesheet\" href=\"assets/css/main.css\" />";
+   var beginbody="\r\n<body>";
+   var divcontent1= "\r\n<!-- Page Wrapper -->\r\n<div id=\"page-wrapper\">\r\n<!-- Wrapper -->\r\n<div id=\"wrapper\">"+
+			"\r\n<section class=\"panel banner right\">"+
+			"\r\n<div class=\"content color0 span-3-75\">"+
+			"\r\n<h1 class=\"major\">Hello, [ENTER YOUR NAME]</h1>"+									
+		    "\r\n<p>Embrace your creative blocks. Self-care is incredibly important from both a physical and mental standpoint. A creative block is nature's way of calling in a moment of self-reflection. In order to improve, you need to stop between sessions and think about those steps.</p>"+
+			"\r\n<ul class=\"actions\">"+
+			"\r\n<li><a href=\"#first\" class=\"button special color1 circle icon fa-angle-right\" >Next</a></li>"+
+			"\r\n</ul>"+
+			"\r\n</div>"
+			
+	var divcontent2="\r\n</section>"+
+			"\r\n<!-- Panel (Spotlight) -->"+
+			"\r\n<section class=\"panel spotlight medium right\" id=\"first\">"+
+			"\r\n<div class=\"content span-7\">"+
+			"\r\n<h2 class=\"major\">Terri Burns, President of Tech@NYU: </h2>"+
+			"\r\n<p>Give [computer science] a shot. It's okay if you don't like it, or end up doing something else. But you never know unless you dedicate serious time and effort to trying. And if you do like it, share that with others. You have no idea how many wonderful communities exist for supporting and encouraging women to keep it up, and that's so empowering</p>"+
+			"\r\n</div>";
+		
+	var divcontent3= "\r\n</section>"+
+			"\r\n</div>"+
+			"\r\n</div>";
+			
+	var addimg1 = "\r\n<div class=\"image filtered span-1-75\" data-position=\"25% 25%\">"+
+			"\r\n<img src=\"images/pic01.jpg\" />"+
+			"\r\n</div>";
+	var addimg2=	"\r\n<div class=\"image filtered tinted\" data-position=\"top left\">"+
+			"\r\n<img src=\"images/pic02.jpg\"/>"+
+			"\r\n</div>";
+		
+    //Runcode handler
+    function runCodeHandler()
+    {
+       var text = document.getElementById('inputtext').value;
+       
+       text= text.replace(/(?:\r\n|\r|\n)/g, '');
+       var ifrm = document.getElementById('ifrm');
+      
+       var y = (ifrm.contentWindow || ifrm.contentDocument);
+       if (y.document)y = y.document;
+       // y.body.style.backgroundColor = "red";
+      // alert(text);
+      
+        if(validHTML(text)) {
+             alert('Valid HTML')
+             y.body.innerHTML= text;
+        }
+        else {
+            alert('Invalid HTML. Please check your code. ');
+        }
+        
+    }
+     // set height of iframe and display value
+    function addHtmlHandler(){
+      
+      var content = beginhtml+beginhead+endhead+beginbody+endhtml;
+      document.getElementById('inputtext').value = content;
+        
+    }
+    
+   function addStyleHandler()
+   {
+      var content = beginhtml+beginhead+addcss+endhead+beginbody+divcontent1+addimg1+divcontent2+addimg2+divcontent3+endhtml;
+      document.getElementById('inputtext').value = content;
+   }
+ 
+   function addContentHandler()
+   {
+      
+      var content = beginhtml+beginhead+endhead+beginbody+divcontent1+divcontent2+divcontent3+endhtml;
+      document.getElementById('inputtext').value = content;
+   }
+    function addImagesHandler()
+   {
+      
+      var content = beginhtml+beginhead+endhead+beginbody+divcontent1+addimg1+divcontent2+addimg2+divcontent3+endhtml;
+      document.getElementById('inputtext').value = content;
+   }
+   
+   function validHTML(html) {
+  var openingTags, closingTags;
+
+  html        = html.replace(/<[^>]*\/\s?>/g, '');      // Remove all self closing tags
+  html        = html.replace(/<(br|hr|img).*?>/g, '');  // Remove all <br>, <hr>, and <img> tags
+  openingTags = html.match(/<[^\/].*?>/g) || [];        // Get remaining opening tags
+  closingTags = html.match(/<\/.+?>/g) || [];           // Get remaining closing tags
+
+  return openingTags.length === closingTags.length ? true : false;
+}
+
+
+
+</script>
+</body>
+</html>
+
